@@ -1,60 +1,40 @@
-# Repository Description
+# Lexical Semantic Change Evaluation Framework
 
-This repository contains the source code to evaluate dimensions of lexical semantic change concurrently, as specified by the computational framework outlined in the companion manuscript titled "A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications” by Naomi Baes, Nick Haslam, and Ekaterina Vylomova.
+This repository contains the source code for evaluating dimensions of lexical semantic change concurrently, as outlined in the companion manuscript titled "A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications" by Naomi Baes, Nick Haslam, and Ekaterina Vylomova.
 
-## Programming Languages (across scripts)
+## About
 
-    Bash (Bourne Again Shell) (.sh)
-    Python (version 3.11.9) (.py, .ipynb)
-    R (version 4.2.2) (.R)
+This framework evaluates lexical semantic change across various dimensions and supports analysis in Bash, Python, and R. Each dimension currently contains its own folder.
 
-**Programming Environments**
+### Languages and Environments
 
-    Spartan : the University of Melbourne’s general purpose hybrid high performance computing system (Lafayette et al., 2016) used to preprocess the corpus data (all scripts in the 0_corpus_preprocessing folder).
-        Usage:
-            Vim Editor (code editor)
-            Slurm (Job scheduler and workload manager for HPC clusters - submit ".slurm" files)
-        Reference: Lafayette, L., Sauter, G., Vu, L., & Meade, B. (2016). Spartan performance and flexibility: An hpc-cloud chimera. OpenStack Summit, Barcelona, 27.
-    IDE - Visual Studio Code: for integrated workflow to run scripts
-        Python Setup
-            .conda environment management
-        R Setup
-            renv for consistent and isolated environments for each project (ensuring consistent package versions across different machines or user accounts).
-                New Project? Initialize renv: renv::init()
-                Ensure renv is installed: install.packages("renv")
-                Activate the environment: renv::restore()
+- **Bash**: Shell scripts (.sh)
+- **Python**: Scripts (.py) and Jupyter Notebooks (.ipynb)
+- **R**: Scripts (.R)
 
-*Note:* 
-- The environment folder provides a link to download the R environment and Python dependencies needed to work within a reproducible environment, ensuring consistency across different machines.
-- Corpora for input data are not provided as data are copyrighted and not publicly available, however examples of the corpus format are given for preprocessing examples.
-- Necessary additional folders should be created dynamically upon running scripts.
-- See the following repository for an applied example of the framework on mental_health, mental_illness, and perception: https://osf.io/4d7ur/
-	- This OSF repository contains a folder for programming figures (6_fig) and running statistical analyses (7_statistical_analyses) which are not included here.
+Environments:
 
-## Copyright and Licensing Information
+- **Spartan**: Utilizes the University of Melbourne’s hybrid high-performance computing system for preprocessing corpus data for corpus pre-processing (transformer models).
+    - **Related Scripts**: Vim Editor and Slurm for HPC clusters.
+- **Visual Studio Code IDE**: Integrated environment for running scripts with Conda environment management for Python and renv for R.
 
-**Code License:**
+## License
 
-    The code associated with this work is licensed under the Creative Commons Attribution 4.0 International Public License. This allows others to share and adapt the work, provided appropriate credit is given, a link to the license is provided, and any changes are indicated.
+- The code is licensed under the Creative Commons Attribution 4.0 International Public License.
+- The Association for Computational Linguistics (ACL) is the licensor of the code.
 
-**Licensor:**
+### Citation Request
 
-    The Association for Computational Linguistics (ACL) is the licensor of the code. The appropriate copyright notice to use is: "Copyright © 2020 Association for Computational Linguistics (ACL). All Rights Reserved."
+If you use this code in your research or project, please cite the following paper:
 
-**Creative Commons Attribution 4.0 International Public License:**
+- **Title**: A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications
+- **Authors**: Naomi Baes, Nick Haslam, Ekaterina Vylomova
+- **Conference**: Proceedings of the Association for Computational Linguistics (ACL), 2024
 
-    You can view the full terms of the Creative Commons Attribution 4.0 International Public License here: https://creativecommons.org/licenses/by/4.0/.
+## Additional Information
 
-**Citation Request:**
+- Corpus data are not provided due to copyright restrictions, but the format is: text ||||| year ||||| publication_type ||||| id.
+- The `environment` file provides links to download R environment and Python dependencies for reproducibility.
+- For an applied example of the framework, refer to the [OSF repository](https://osf.io/4d7ur/). It contains scripts for statistical analysis and programming figures.
 
-    If you use this code in your research or project, please cite the following paper:
-
-    A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications
-    Naomi Baes, Nick Haslam, Ekaterina Vylomova
-    Proceedings of the Association for Computational Linguistics (ACL), 2024
-    [DOI or URL of the Paper]
-
-
------------------------------------------------
-
-Contact me at naomi_baes@hotmail.com if you have any questions.
+For questions, contact Naomi Baes at naomi_baes@hotmail.com.
