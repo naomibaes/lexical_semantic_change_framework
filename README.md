@@ -22,7 +22,7 @@ Environments:
 
 ## License
 
-- The code is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0), allowing others to share and adapt the work with appropriate credit.
+- The code is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0), allowing others to share and adapt the work with appropriate credit (see `license.txt`).
 - The Association for Computational Linguistics (ACL) is the licensor of the code: "*Copyright © 2020 Association for Computational Linguists (ACL). All Rights Reserved.*"
 
 ### Citation Request
