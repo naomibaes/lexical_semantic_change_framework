@@ -17,13 +17,13 @@ Programming Languages:
 Environments:
 
 - **Spartan**: The University of Melbourne’s high-performance computing system for preprocessing corpus data (transformer models).
-    - **Related Scripts**: Vim Editor and Slurm for HPC clusters.
+    - **Related Scripts**: Slurm files for HPC clusters (job scheduler and workload manager).
 - **Visual Studio Code IDE**: Integrated environment for running scripts with Conda environment management for Python and renv for R.
 
 ## License
 
 - The code is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0), allowing others to share and adapt the work with appropriate credit.
-- The Association for Computational Linguistics (ACL) is the licensor of the code.
+- The Association for Computational Linguistics (ACL) is the licensor of the code: "*Copyright © 2020 Association for Computational Linguists (ACL). All Rights Reserved.*"
 
 ### Citation Request
 
@@ -36,7 +36,7 @@ If you use this code in your research or project, please cite the following pape
 ## Additional Information
 
 - Corpus data are not provided due to copyright restrictions, but the format is: "text ||||| year ||||| publication_type ||||| id".
-- The `environment` file provides links to download R environment and Python dependencies for reproducibility.
+- The `environment.txt` file provides links to download R environment and Python dependencies for reproducibility.
 - For an applied example of the framework, refer to the [OSF repository](https://osf.io/4d7ur/). It contains scripts for statistical analysis and programming figures.
 - The code may be updated (streamlined and new methods for evaluating the dimensions may be added).
 
