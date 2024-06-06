@@ -20,11 +20,6 @@ Environments:
     - **Related Scripts**: Slurm files for HPC clusters (job scheduler and workload manager).
 - **Visual Studio Code IDE**: Integrated environment for running scripts with Conda environment management for Python and renv for R.
 
-## License
-
-- The code is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0), allowing others to share and adapt the work with appropriate credit (see `license.txt`).
-- The Association for Computational Linguistics (ACL) is the licensor of the code: "*Copyright © 2020 Association for Computational Linguists (ACL). All Rights Reserved.*"
-
 ### Citation Request
 
 If you use this code in your research or project, please cite the following paper:
