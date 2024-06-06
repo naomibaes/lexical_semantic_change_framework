@@ -4,7 +4,7 @@ This repository contains the source code for evaluating dimensions of lexical se
 
 ## About
 
-The Lexical Semantic Change Evaluation Framework assesses lexical semantic change across various dimensions and supports analysis in Bash, Python, and R.
+The Lexical Semantic Change Evaluation Framework assesses lexical semantic change across various dimensions and supports analysis in Bash, Python, and R. Each dimension has its own folder.
 
 ### Languages and Environments
 
