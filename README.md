@@ -4,9 +4,11 @@ This repository contains the source code for evaluating dimensions of lexical se
 
 ## About
 
-This framework evaluates lexical semantic change across various dimensions and supports analysis in Bash, Python, and R. Each dimension currently contains its own folder.
+The Lexical Semantic Change Evaluation Framework assesses lexical semantic change across various dimensions and supports analysis in Bash, Python, and R.
 
 ### Languages and Environments
+
+Programming Languages: 
 
 - **Bash**: Shell scripts (.sh)
 - **Python**: Scripts (.py) and Jupyter Notebooks (.ipynb)
@@ -14,13 +16,13 @@ This framework evaluates lexical semantic change across various dimensions and s
 
 Environments:
 
-- **Spartan**: Utilizes the University of Melbourne’s hybrid high-performance computing system for preprocessing corpus data for corpus pre-processing (transformer models).
+- **Spartan**: The University of Melbourne’s high-performance computing system for preprocessing corpus data (transformer models).
     - **Related Scripts**: Vim Editor and Slurm for HPC clusters.
 - **Visual Studio Code IDE**: Integrated environment for running scripts with Conda environment management for Python and renv for R.
 
 ## License
 
-- The code is licensed under the Creative Commons Attribution 4.0 International Public License.
+- The code is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0), allowing others to share and adapt the work with appropriate credit.
 - The Association for Computational Linguistics (ACL) is the licensor of the code.
 
 ### Citation Request
@@ -33,8 +35,9 @@ If you use this code in your research or project, please cite the following pape
 
 ## Additional Information
 
-- Corpus data are not provided due to copyright restrictions, but the format is: text ||||| year ||||| publication_type ||||| id.
+- Corpus data are not provided due to copyright restrictions, but the format is: "text ||||| year ||||| publication_type ||||| id".
 - The `environment` file provides links to download R environment and Python dependencies for reproducibility.
 - For an applied example of the framework, refer to the [OSF repository](https://osf.io/4d7ur/). It contains scripts for statistical analysis and programming figures.
+- The code may be updated (streamlined and new methods for evaluating the dimensions may be added).
 
 For questions, contact Naomi Baes at naomi_baes@hotmail.com.
