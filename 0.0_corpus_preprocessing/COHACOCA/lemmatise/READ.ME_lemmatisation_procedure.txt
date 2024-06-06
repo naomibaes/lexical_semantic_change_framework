@@ -1,0 +1,64 @@
+Author: Chat GPT and Naomi Baes
+
+Procedure for the provided Python script:
+
+1. Imports:
+
+    Imports various libraries for text processing and file handling:
+
+        spacy for natural language processing.
+        sys for accessing command-line arguments.
+        nltk for downloading the punkt tokenizer (one-time download).
+        os for file system interactions.
+
+2. SpaCy Model Loading and Stop Word Handling:
+
+    Loads a large spaCy model (en_core_web_trf) for English language processing.
+    Defines STOP_WORDS from spaCy and adds additional stop words for removal during processing.
+
+3. Text Processing Functions:
+
+    process_long_sentence:
+        Takes a sentence, spaCy model, stop words list, and maximum token threshold as input.
+        Processes the sentence with spaCy.
+        Truncates the sentence if it exceeds the token limit.
+        Performs normalization:
+            Removes punctuation, symbols, parts of speech (optional).
+            Lowercases most words (except for predefined keywords).
+            Lemmatizes remaining words.
+            Removes stop words and pronouns.
+        Returns the normalized sentence as a string with tokens joined by spaces.
+
+    normalize_abstract_chunk (similar to process_line in your example):
+        Takes a chunk of data (likely containing multiple lines from the input file), spaCy model, stop words list, maximum token threshold, and maximum character threshold as input.
+        Iterates over each line in the chunk:
+            Splits the line by the delimiter (|||||) to extract abstract, year, journal information.
+            Calls normalize_abstract (not shown) to process the abstract text.
+        Returns a list of processed lines where each line includes the normalized abstract, year, and journal information separated by the delimiter (|||||).
+
+4. Main Processing Loop:
+
+    Takes the input file name from the first command-line argument (sys.argv[1]).
+
+    Defines the output file name with ".processed" appended.
+
+    Removes the existing output file (if it exists).
+
+    Sets a batch size for reading the input file in chunks.
+
+    Opens the input and output files.
+
+    Loops until all lines are processed:
+        Reads a batch of lines from the input file.
+        Processes the batch using normalize_abstract_chunk.
+        Writes the processed lines (containing normalized abstracts and other information) to the output file.
+
+5. Completion Message:
+
+    Prints a message indicating successful processing completion and mentions the output file path.
+
+Note:
+
+    This script doesn't use multithreading for concurrent processing (although it could be modified to do so for very large files).
+    It focuses on text normalization rather than general text processing.
+    It uses spaCy for lemmatization and some additional text cleaning steps.
