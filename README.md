@@ -16,7 +16,7 @@ Programming Languages:
 
 Environments:
 
-- **Spartan**: The University of Melbourne’s high-performance computing system for preprocessing corpus data (transformer models).
+- **Spartan**: The University of Melbourne’s high-performance computing system for preprocessing corpus data.
     - **Related Scripts**: Slurm files for HPC clusters (job scheduler and workload manager).
 - **Visual Studio Code IDE**: Integrated environment for running scripts with Conda environment management for Python and renv for R.
 
@@ -27,6 +27,7 @@ If you use this code in your research or project, please cite the following pape
 - **Title**: A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications
 - **Authors**: Naomi Baes, Nick Haslam, Ekaterina Vylomova
 - **Conference**: Proceedings of the Association for Computational Linguistics (ACL), 2024
+- **arXiv preprint**: https://url.au.m.mimecastprotect.com/s/E2juCk8vpKsn88oVzu2jXEv?domain=arxiv.org
 
 ## Additional Information
 
