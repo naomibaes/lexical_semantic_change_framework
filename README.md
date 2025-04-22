@@ -22,12 +22,8 @@ Environments:
 
 ### Citation Request
 
-If you use this code in your research or project, please cite the following paper:
-
-- **Title**: A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications
-- **Authors**: Naomi Baes, Nick Haslam, Ekaterina Vylomova
-- **Conference**: Proceedings of the Association for Computational Linguistics (ACL), 2024
-- **arXiv preprint**: https://url.au.m.mimecastprotect.com/s/E2juCk8vpKsn88oVzu2jXEv?domain=arxiv.org
+If you use this code in your research or project, please cite the following paper: 
+- Naomi Baes, Nick Haslam, and Ekaterina Vylomova. 2024. A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications. In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1390–1415, Bangkok, Thailand. Association for Computational Linguistics.
 
 ## Additional Information
 
