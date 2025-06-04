@@ -1,5 +1,4 @@
-# SIBling Framework 🟢🔴🔵
-*A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications*
+# SIBling Framework 🟢🔴🔵: *A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications*
 
 Baes, N., Haslam, N., & Vylomova, E. (2024).  
 *A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications.*  
@@ -18,7 +17,7 @@ In *Proceedings of the 62nd Annual Meeting of the Association for Computational 
 
 This framework reduces traditional lexical change types (e.g., amelioration, narrowing) into three continuous, empirically testable axes—enabling concurrent evaluation of meaning shifts over time.
 
-> 🔁 See the implementation of a follow-up evaluation framework validating the methodologies we introduce in this work here: [LSC-Eval](https://github.com/naomibaes/LSCD_method_evaluation/tree/main)
+> 🔁 For the implementation and evaluation of the methods introduced here, see: [LSC-Eval](https://github.com/naomibaes/LSCD_method_evaluation/tree/main)
 
 ---
 
