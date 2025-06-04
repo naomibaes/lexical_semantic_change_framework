@@ -15,7 +15,7 @@ In *Proceedings of the 62nd Annual Meeting of the Association for Computational 
 - **Intensity**: strong ↔ weak  
 - **Breadth**: wide ↔ narrow  
 
-This framework reduces traditional lexical change types (e.g., amelioration, narrowing) into three continuous, empirically testable axes—enabling concurrent evaluation of meaning shifts over time.
+This framework reduces traditional lexical change types (e.g., amelioration, narrowing) into three continuous, empirically testable axes—enabling concurrent evaluation of how word meanings shifts over time.
 
 > 🔁 For the implementation and evaluation of the methods introduced here, see: [LSC-Eval](https://github.com/naomibaes/LSCD_method_evaluation/tree/main)
 
