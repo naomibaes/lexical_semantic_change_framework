@@ -1,9 +1,10 @@
-# 🧠 SIBling Framework  
+# SIBling Framework 🟢🔴🔵
 *A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications*
 
 Baes, N., Haslam, N., & Vylomova, E. (2024).  
 *A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications.*  
-In *Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024)*. [📄 ACL Anthology Link](https://aclanthology.org/2024.acl-long.76/)
+In *Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024)*.  
+[📄 ACL Anthology Link](https://aclanthology.org/2024.acl-long.76/)
 
 ---
 
@@ -17,7 +18,7 @@ In *Proceedings of the 62nd Annual Meeting of the Association for Computational 
 
 This framework reduces traditional lexical change types (e.g., amelioration, narrowing) into three continuous, empirically testable axes—enabling concurrent evaluation of meaning shifts over time.
 
-> 🔁 See the applied implementation and evaluation framework here: [LSC-Eval](https://github.com/naomibaes/LSC-Eval)
+> 🔁 See the implementation of a follow-up evaluation framework validating these methodologies here: [LSC-Eval](https://github.com/naomibaes/LSCD_method_evaluation/tree/main)
 
 ---
 
@@ -35,14 +36,13 @@ These three axes mirror affective and connotational dimensions validated in psyc
 
 ## 📁 Repository Structure
 
-| Folder/File | Description |
-|-------------|-------------|
-| `sentiment/` | Scripts and examples related to tracking evaluative shifts in word meaning |
-| `breadth/` | Scripts and datasets for measuring range expansion/contraction (e.g., using distributional spread or lexical taxonomies) |
-| `intensity/` | Scripts for modeling change in emotional or referential strength (e.g., arousal scores, metaphorical inflation) |
-| `environment.txt` | Package environment specifications for reproducibility in R and Python |
-| `slurm_scripts/` | HPC (Spartan) job submission files for large-scale corpus processing |
-| `README.md` | You are here! |
+| Folder/File       | Description |
+|-------------------|-------------|
+| `sentiment/`       | Scripts and examples related to tracking evaluative shifts in word meaning (collocate-level Valence index) |
+| `breadth/`         | Scripts and datasets for measuring range expansion/contraction (sentence-level Breadth score) |
+| `intensity/`       | Scripts for modeling change in emotional or referential strength (collocate-level Arousal index and Intensifier index (adjective modifiers) |
+| `environment.txt`  | Package environment specifications for reproducibility in R and Python |
+| `README.md`        | You are here! |
 
 ---
 
@@ -54,18 +54,19 @@ SIBling maps six classical types of semantic change (e.g., amelioration, narrowi
 - **Greater sensitivity** to subtle, co-occurring shifts in word meaning  
 - **Alignment with psychological theories** of concept representation and cultural change  
 
-> See [Figure 1 and Table 1](https://aclanthology.org/2024.acl-long.76/#appendix) in the ACL 2024 paper for full theoretical mapping.
+> See [Figure 1 and Table 1](https://aclanthology.org/2024.acl-long.76) in the ACL 2024 paper for full theoretical mapping.
 
 ---
 
 ## 🔗 Companion Resources
 
-- [📁 LSC-Eval](https://github.com/naomibaes/LSC-Eval): End-to-end evaluation framework for LSC models using synthetic change detection benchmarks built on the SIBling framework.  
+- [📁 LSC-Eval](https://github.com/naomibaes/LSCD_method_evaluation/tree/main): End-to-end evaluation framework for LSC methods using synthetic change detection benchmarks built on the SIBling framework.  
 - [📁 Synthetic-LSC Pipeline](https://github.com/naomibaes/Synthetic-LSC_pipeline): Generation of synthetic corpora with controlled SIB changes using GPT and WordNet.  
 - [📁 Psychology Corpus](https://github.com/naomibaes/psychology_corpus): Year-partitioned corpus used in proof-of-concept case studies.
 
 ---
-### 🛠️ Languages and Environments
+
+## 🛠️ Languages and Environments
 
 **Programming Languages**  
 - **Python**: Core analysis and modeling scripts (`*.py`, Jupyter Notebooks)  
@@ -77,17 +78,55 @@ SIBling maps six classical types of semantic change (e.g., amelioration, narrowi
 - **VS Code / Local IDEs**: Recommended for running Python and R scripts locally, using Conda (Python) and `renv` (R) for reproducibility
 
 ---
+
+## 📎 Additional Information
+
+- **Corpus Format**: Due to copyright restrictions, the full corpus cannot be redistributed. However, it follows the format:  text ||||| year ||||| publication_type ||||| id
+
+- **Reproducibility**:  
+- A file named `environment.txt` specifies how to install the Python and R dependencies used in the original study.
+- **Applied Example**:  
+- See the [OSF repository](https://osf.io/4d7ur/) for full replication materials including data prep, statistical analysis, and final figure generation.
+- **Future Updates**:  
+- This repository may be expanded to streamline processes or incorporate improved methods for evaluating each semantic dimension.
+
+---
+
 ## 📚 Citation
 
 If you use the SIBling framework or its code in your work, please cite the original theoretical paper:
 
 ```bibtex
-@inproceedings{baes-etal-2024-sibling,
-  title = {A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications},
-  author = {Baes, Naomi and Haslam, Nick and Vylomova, Ekaterina},
-  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
-  year = {2024},
-  pages = {1390--1415},
-  publisher = {Association for Computational Linguistics},
-  address = {Bangkok, Thailand}
+@inproceedings{baes-etal-2024-multidimensional,
+    title = "A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications",
+    author = "Baes, Naomi  and
+      Haslam, Nick  and
+      Vylomova, Ekaterina",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.76/",
+    doi = "10.18653/v1/2024.acl-long.76",
+    pages = "1390--1415",
+    abstract = "Historical linguists have identified multiple forms of lexical semantic change. We present a three-dimensional framework for integrating these forms and a unified computational methodology for evaluating them concurrently. The dimensions represent increases or decreases in semantic 1) sentiment (valence of a target word{'}s collocates), 2) intensity (emotional arousal of collocates or the frequency of intensifiers), and 3) breadth (diversity of contexts in which the target word appears). These dimensions can be complemented by evaluation of shifts in the frequency of the target words and the thematic content of its collocates. This framework enables lexical semantic change to be mapped economically and systematically and has applications in computational social science. We present an illustrative analysis of semantic shifts in \textit{mental health} and \textit{mental illness} in two corpora, demonstrating patterns of semantic change that illuminate contemporary concerns about pathologization, stigma, and concept creep."
 }
+```
+---
+
+## 📬 Contact
+
+For questions, suggestions, or collaboration inquiries, contact:  
+**Naomi Baes**  
+📧 naomi_baes@hotmail.com  
+🌐 [naomibaes.github.io](https://naomibaes.github.io)
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to my PhD supervisors with whom I developed this work: **Ekaterina Vylomova, and Nick Haslam.**
