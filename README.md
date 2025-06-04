@@ -36,13 +36,17 @@ These axes mirror affective and connotational dimensions validated in psychology
 
 ## 📁 Repository Structure
 
-| Folder/File       | Description |
-|-------------------|-------------|
-| `sentiment/`       | Scripts and examples related to tracking evaluative shifts in word meaning (collocate-level Valence index) |
-| `breadth/`         | Scripts and datasets for measuring range expansion/contraction (sentence-level Breadth score) |
-| `intensity/`       | Scripts for modeling change in emotional or referential strength (collocate-level Arousal index and Intensifier index (adjective modifiers) |
-| `environment.txt`  | Package environment specifications for reproducibility in R and Python |
-| `README.md`        | You are here! |
+| Folder/File                                | Description |
+|--------------------------------------------|-------------|
+| `0.0_corpus_preprocessing/`                | Scripts for corpus preprocessing (e.g., cleaning, lemmatization, dependency parsing, filtering by target term) |
+| `0.1_descriptives/`                        | Scripts to generate descriptive statistics about target term frequencies and distributions |
+| `1_sentiment/`                             | Scripts for evaluating Sentiment change (e.g., Valence index using collocates) |
+| `2_breadth/`                               | Scripts for measuring semantic Breadth (e.g., sentence-level Breadth score using embedding spread) |
+| `3_intensity/`                             | Scripts for detecting Intensity change (e.g., Arousal index and intensifier modifier patterns) |
+| `4_salience/`                              | Scripts for calculating relative frequency change or salience of target terms over time |
+| `5_thematic_content/pathologization/`      | Scripts for analyzing shifts in thematic context and pathologization (e.g., collocate themes) |
+| `environment.txt`                          | Instructions and links for setting up Conda (Python) and renv (R) environments for full reproducibility |
+| `README.md`                                | You are here! |
 
 ---
 
@@ -81,7 +85,15 @@ SIBling maps six classical types of semantic change (e.g., amelioration, narrowi
 
 ## 📎 Additional Information
 
-- **Reproducibility**: A file named `environment.txt` specifies how to install the Python and R dependencies used in the original study.
+- - **Reproducibility**: The `environment.txt` file contains instructions and a Google Drive link to download the original `.conda/` and `renv/` folders used in the project. These ensure consistent environments for:
+  - 🐍 **Python**: via Conda-managed environments
+  - 📊 **R**: via `renv`, enabling project-specific library management and reproducibility
+
+> To restore the R environment:
+> ```r
+> install.packages("renv")
+> renv::restore()
+> ```
 - **Future Updates**: This repository may be expanded to streamline processes or incorporate improved methods for evaluating each semantic dimension.
 
 ---
@@ -123,4 +135,5 @@ For questions, suggestions, or collaboration inquiries, contact:
 
 ## 🙏 Acknowledgements
 
-Special thanks to my PhD supervisors with whom I developed this work: **Ekaterina Vylomova, and Nick Haslam.**
+Special thanks to my PhD supervisors, **Nick Haslam** and  **Ekaterina Vylomova**, for their guidance and supervision throughout the development of this work.
+
