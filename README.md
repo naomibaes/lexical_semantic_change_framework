@@ -43,7 +43,7 @@ These axes mirror affective and connotational dimensions validated in psychology
 | `2_breadth/`                               | Scripts for measuring semantic Breadth (e.g., sentence-level Breadth score using embedding spread) |
 | `3_intensity/`                             | Scripts for detecting Intensity change (e.g., Arousal index and intensifier modifier patterns) |
 | `4_salience/`                              | Scripts for calculating relative frequency change or salience of target terms over time |
-| `5_thematic_content/pathologization/`      | Scripts for analyzing shifts in thematic context and pathologization (e.g., collocate themes) |
+| `5_thematic_content/pathologization/`      | Scripts for analyzing shifts in thematic content, using a top-down dictionary approach to measure pathologization (in collocates) |
 | `environment.txt`                          | Instructions and links for setting up Conda (Python) and renv (R) environments for full reproducibility |
 | `README.md`                                | You are here! |
 
