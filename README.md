@@ -1,4 +1,4 @@
-# SIBling Framework 🟢🔴🔵: *A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications*
+# 🟢🔴🔵 SIBling: A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications
 
 Baes, N., Haslam, N., & Vylomova, E. (2024).  
 *A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications.*  
