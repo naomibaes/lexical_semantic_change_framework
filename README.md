@@ -10,7 +10,7 @@ In *Proceedings of the 62nd Annual Meeting of the Association for Computational 
 
 ## 📄 About
 
-**SIBling** proposes a unified, psychologically grounded framework for analyzing and categorizing lexical semantic change (LSC) along three interpretable and quantifiable dimensions:
+**SIBling** proposes a unified, psychologically grounded framework for evaluating lexical semantic change (LSC) along three interpretable and quantifiable dimensions:
 
 - **Sentiment**: positive ↔ negative  
 - **Intensity**: strong ↔ weak  
@@ -18,7 +18,7 @@ In *Proceedings of the 62nd Annual Meeting of the Association for Computational 
 
 This framework reduces traditional lexical change types (e.g., amelioration, narrowing) into three continuous, empirically testable axes—enabling concurrent evaluation of meaning shifts over time.
 
-> 🔁 See the implementation of a follow-up evaluation framework validating these methodologies here: [LSC-Eval](https://github.com/naomibaes/LSCD_method_evaluation/tree/main)
+> 🔁 See the implementation of a follow-up evaluation framework validating the methodologies we introduce in this work here: [LSC-Eval](https://github.com/naomibaes/LSCD_method_evaluation/tree/main)
 
 ---
 
@@ -27,10 +27,10 @@ This framework reduces traditional lexical change types (e.g., amelioration, nar
 | Dimension   | Definition | Rising Example | Falling Example |
 |-------------|------------|----------------|-----------------|
 | 🟢 **Sentiment** | Change in a word’s evaluative connotation: does it acquire more positive (*elevation*) or negative (*pejoration*) meaning? | *geek* (derogatory → enthusiast) | *retarded* (clinical → pejorative) |
-| 🔴 **Intensity** | Shift in emotional or referential force: does the meaning become stronger (*hyperbole*) or weaker (*meiosis*)? | *hilarious* (from cheerful → extreme laughter) | *trauma* (from injury → mild adversity) |
-| 🔵 **Breadth** | Shift in semantic scope: does the meaning expand (*generalization*) or contract (*specialization*)? | *cloud* (weather → internet storage) | *meat* (any food → animal flesh) |
+| 🔴 **Intensity** | Shift in emotional force: does the meaning become stronger (*meiosis*) or weaker (*hyperbole*)? | *hilarious* (from cheerful → extreme laughter) | *trauma* (from brain injury → mild adversity) |
+| 🔵 **Breadth** | Shift in semantic scope: does the meaning expand (*generalization*) or contract (*specialization*) its semantic range? | *cloud* (weather → internet storage) | *meat* (any food → animal flesh) |
 
-These three axes mirror affective and connotational dimensions validated in psychology and semantics (e.g., Valence–Arousal, Evaluation–Potency).
+These axes mirror affective and connotational dimensions validated in psychology and semantics (e.g., Valence–Arousal, Evaluation–Potency).
 
 ---
 
@@ -48,7 +48,7 @@ These three axes mirror affective and connotational dimensions validated in psyc
 
 ## 🧪 Methodological Foundations
 
-SIBling maps six classical types of semantic change (e.g., amelioration, narrowing, hyperbole) to **three orthogonal semantic dimensions**. This enables:
+SIBling maps six classical types of semantic change (e.g., amelioration, narrowing, hyperbole) to **three semantic dimensions**. This enables:
 
 - **Concurrent quantification** of multiple kinds of change  
 - **Greater sensitivity** to subtle, co-occurring shifts in word meaning  
@@ -69,8 +69,8 @@ SIBling maps six classical types of semantic change (e.g., amelioration, narrowi
 ## 🛠️ Languages and Environments
 
 **Programming Languages**  
-- **Python**: Core analysis and modeling scripts (`*.py`, Jupyter Notebooks)  
-- **R**: Statistical analysis, mixed-effects modeling, and plotting (`*.R`)  
+- **Python**: Language evaluation scripts (`*.py`, Jupyter Notebooks)  
+- **R**: Mainly statistical analysis and plotting (`*.R`)  
 - **Bash**: Shell scripts for preprocessing and job scheduling (`*.sh`)
 
 **Computational Environments**  
@@ -81,14 +81,8 @@ SIBling maps six classical types of semantic change (e.g., amelioration, narrowi
 
 ## 📎 Additional Information
 
-- **Corpus Format**: Due to copyright restrictions, the full corpus cannot be redistributed. However, it follows the format:  text ||||| year ||||| publication_type ||||| id
-
-- **Reproducibility**:  
-- A file named `environment.txt` specifies how to install the Python and R dependencies used in the original study.
-- **Applied Example**:  
-- See the [OSF repository](https://osf.io/4d7ur/) for full replication materials including data prep, statistical analysis, and final figure generation.
-- **Future Updates**:  
-- This repository may be expanded to streamline processes or incorporate improved methods for evaluating each semantic dimension.
+- **Reproducibility**: A file named `environment.txt` specifies how to install the Python and R dependencies used in the original study.
+- **Future Updates**: This repository may be expanded to streamline processes or incorporate improved methods for evaluating each semantic dimension.
 
 ---
 
